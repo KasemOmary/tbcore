@@ -65,45 +65,23 @@ sub order_set_total {
 }
 
 sub item_add {
-	# Add Items
 
 }
 
 sub item_sub { 
-	# Remove Items 
 
 }
 
 sub item_mod { 
-	# Item design - 
-	# 1. Item		[ Scalar ]
-	# 2. Modifiers	[ 32 bit number ]
-	# 3. Options	[ 32 bit number ] 
-	# 4. Quantity	[ Number ] 
 
 }
 
 sub com_order { 
-	# Communicate Order 
 
 }
 
 sub com_finalize {
-	# Charge , Verify , Communicate 
 
-}
-
-sub test_view {
-	# Local Test ; View 
-
-}
-
-sub test_record { 
-	# Local Test ; Record 
-}
-
-sub test_output {
-	# Local Test ; Output 
 }
 
 1;
