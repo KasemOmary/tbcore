@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<!-- 
+	DTD
+	
+	price:	id=	product_id
+		attr:	t= taxable	p= pricing
+
+-->
+
+<price id="50110">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50111">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50210">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50310">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50311">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50312">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50410">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50510">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50510">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50910">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50911">
+	<attr t="1" p="1.00">
+</price>
+
+<price id="50912">
+	<attr t="1" p="1.00">
+</price>

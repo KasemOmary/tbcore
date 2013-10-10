@@ -1,0 +1,5 @@
+Whats what and where we find what where.
+
+xml: 	xml files for configuration.  Pricing, names, etc.
+
+cfg:	configuration modules

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--	
+*DTD*
+
+PRODUCT 
+
+type:	Product Class
+
+PID:	Product ID	(Machine)
+		Format:		Class:50	ID:311	
+		As Shown:	50311 
+CID:	Client ID
+
+Name:	Product Name (Human)
+-->  
+<product type="appetizer">
+	<pid>50110</pid>
+	<cid>101310</cid>
+	<name>Wings</name>
+</product>
+
+<product type="appetizer">
+	<pid>50111</pid>
+	<cid>101311</cid>
+	<name>Mozzarella Sticks</name>
+</product>
+
+<product type="salad">
+	<pid>50210</pid>
+	<cid>101311</cid>
+	<name>Garden Salad</name>
+</product>
+
+<product type="sandwich">
+	<pid>50310</pid>
+	<cid>101310</cid>
+	<name>Turkey Grinder</name>
+</product>
+
+<product type="sandwich">
+	<pid>50311</pid>
+	<cid>101310</cid>
+	<name>Meatball Grinder</name>
+</product>
+
+<product type="sandwich">
+	<pid>50312</pid>
+	<cid>101310</cid>
+	<name>Roast Beef Grinder</name>
+</product>
+
+<product type="dinner">
+	<pid>50410</pid>
+	<cid>101310</cid>
+	<name>Pizza</name>
+</product>
+
+<product type="dinner">
+	<pid>50510</pid>
+	<cid>101310</cid>
+	<name>Buffalo Pizza</name>
+</product>
+
+<product type="dinner">
+	<pid>50510</pid>
+	<cid>101310</cid>
+	<name>Hawaiian Pizza</name>
+</product>
+
+<product type="drink">
+	<pid>50910</pid>
+	<cid>101310</cid>
+	<name>Soda, Can</name>
+</product>
+
+<product type="drink">
+	<pid>50911</pid>
+	<cid>101310</cid>
+	<name>Soda, Bottle</name>
+</product>
+
+<product type="drink">
+	<pid>50912</pid>
+	<cid>101310</cid>
+	<name>Soda, 2 Liter</name>
+</product>
