@@ -1,0 +1,20 @@
+tbprocess - mvc base
+
+
+Model
+TBCore
+
+Controller 
+TbMojo			
+
+View
+TbInterface 
+
+
+
+
+TbCore -> Handle data and manipulate in order to return to listener/server 
+
+TbMojo -> Mojolicious based controller for the Tb System 
+
+TbInterface -> Web based interface system for user interaction.

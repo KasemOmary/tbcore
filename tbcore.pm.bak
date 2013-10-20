@@ -40,32 +40,63 @@ sub new {
 }
 
 sub stdout_export { 
+	# <STDOUT> Dump ; Testing. 
+	
 	my $self = shift;
-	print $self->{uid} . "\n";
-	print $self->{sel} . "\n";
-	print $self->{tot} . "\n";
-	print $self->{tax} . "\n";
-	print $self->{nam} . "\n";
-	print $self->{tel} . "\n";
-	print $self->{adr} . "\n";
-	print $self->{apt} . "\n";
-	print $self->{zip} . "\n";
-	print $self->{ins} . "\n";
+	print "uid: " . $self->{uid} . "\n";
+	print "sel: " . $self->{sel} . "\n";
+	print "tot: " . $self->{tot} . "\n";
+	print "tax: " . $self->{tax} . "\n";
+	print "nam: " . $self->{nam} . "\n";
+	print "tel: " . $self->{tel} . "\n";
+	print "adr: " . $self->{adr} . "\n";
+	print "apt: " . $self->{apt} . "\n";
+	print "zip: " . $self->{zip} . "\n";
+	print "ins: " . $self->{ins} . "\n";
 }
 
 sub order_tax {
+	# I dunno.  Calculate the tax - This is bad. 
+	# 
+
 	my $self = shift;
 	my $rate = ($_[0] / 100);
 	$self->{tax} = $self->{tot} * $rate;
 }
 
 sub order_set_total {
+	# This is a bad idea.
+	# Should not be allowed unless done via _add / _sub.
+
 	my $self = shift;
 	$self->{tot} += $_[0]; 
 }
+		# Item design - 
+		# 1. Item		[ Scalar ]
+		# 2. Modifiers	[ 32 bit number ]
+		# 3. Options	[ 32 bit number ] 
+		# 4. Quantity	[ Number ] 
+
+		# Hold this thought:   Here's how we're going to do the options.
+		# Each item will have 2 32 bit numbers.   These will be as follows: 
+		# Modifiers - Cold, hot, half-half, etc - anything under the sun. 
+		# Options - These will be optional components for each product.  
+		# Say we have a pizza - mushrooms, onions, meatball, sausage, etc - that kind of stuff.
+
+		# Here's how it's going to be handled : 
+		# LOAD
+		# $mods = unpack("8B",$mod); @mods = split("",$mods);
+		# SAVE 
+		# $mods = join("",@mods); $mods = pack("8B",$mods);
+		# Clean and simple - we go from a 64 variable array to FFFFFFFF - and we're good for transport.
 
 sub item_add {
 	# Add Items
+	# name => ; quantity => ; mods => ; options => 
+	# Todo : 
+	# Get price. 
+	# Increment Total. 
+	# Record Changes. 
 
 }
 
@@ -75,11 +106,7 @@ sub item_sub {
 }
 
 sub item_mod { 
-	# Item design - 
-	# 1. Item		[ Scalar ]
-	# 2. Modifiers	[ 32 bit number ]
-	# 3. Options	[ 32 bit number ] 
-	# 4. Quantity	[ Number ] 
+	# Modify existing items in the order. 
 
 }
 

@@ -43,16 +43,16 @@ sub stdout_export {
 	# <STDOUT> Dump ; Testing. 
 	
 	my $self = shift;
-	print $self->{uid} . "\n";
-	print $self->{sel} . "\n";
-	print $self->{tot} . "\n";
-	print $self->{tax} . "\n";
-	print $self->{nam} . "\n";
-	print $self->{tel} . "\n";
-	print $self->{adr} . "\n";
-	print $self->{apt} . "\n";
-	print $self->{zip} . "\n";
-	print $self->{ins} . "\n";
+	print "uid: " . $self->{uid} . "\n";
+	print "sel: " . $self->{sel} . "\n";
+	print "tot: " . $self->{tot} . "\n";
+	print "tax: " . $self->{tax} . "\n";
+	print "nam: " . $self->{nam} . "\n";
+	print "tel: " . $self->{tel} . "\n";
+	print "adr: " . $self->{adr} . "\n";
+	print "apt: " . $self->{apt} . "\n";
+	print "zip: " . $self->{zip} . "\n";
+	print "ins: " . $self->{ins} . "\n";
 }
 
 sub order_tax {
@@ -127,6 +127,7 @@ sub test_view {
 
 sub test_record { 
 	# Local Test ; Record 
+	# Create a faux cookie in the filesystem.
 }
 
 sub test_output {

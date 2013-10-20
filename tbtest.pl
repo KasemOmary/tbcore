@@ -17,13 +17,14 @@ while ($x) {
 	my $option = <STDIN>;
 	chomp $option; 
 	if ($option =~ /x/) {
+		# exit 
 		$x = 0;
 	} elsif($option =~ /a/) { 
 		print "% add %\n";
 	} elsif($option =~ /s/) { 
 		print "% subtract %\n";
 	} elsif($option =~ /v/) { 
-		print "% view %\n";
+		$tb->stdout_export();
 	}
 }
 
